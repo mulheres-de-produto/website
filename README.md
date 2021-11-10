@@ -1,29 +1,24 @@
-# Next.js + Tailwind CSS Example
+<img src="https://user-images.githubusercontent.com/5320963/141206473-0f185e62-1452-49d8-9434-2b134e4f1285.png" alt="mulheres-de-produto-log" width="60"/>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# Mulheres de Produto Website
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+Este repositório destina-se ao desenvolvimento do novo website da organização Mulheres de Produto. 
+
+# Site em construção
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Acompanhe o novo site [aqui](https://website-mulheres-de-produto.vercel.app/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Sponsorship
 
-## Deploy your own
+Este website está sendo construído em parceria com a Vercel:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<a
+  href="https://vercel.com/?utm_source=[mulheres-de-produto]&utm_campaign=oss"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Powered by{" "}
+ <img src="https://raw.githubusercontent.com/mulheres-de-produto/website/9037112aef314053d7ef769aefbc9226571b0a90/public/vercel.svg" alt="vercel-sponsor"/>
+</a>
