@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar({ children }) {
   return (
     <>
-      <nav className="fixed bg-black h-88 p-4 px-6 top-0 inset-x-0 z-10">
+      <nav className="sticky bg-black h-88 p-4 px-6 top-0 inset-x-0 z-10">
         <div className="flex justify-between">
           <Link href="/">
             <a className="flex justify-start items-center p-0 px-6">
