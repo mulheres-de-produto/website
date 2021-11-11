@@ -2,7 +2,7 @@
 
 # Mulheres de Produto Website
 
-Este repositório destina-se ao desenvolvimento do novo website da organização Mulheres de Produto. 
+Este repositório destina-se ao desenvolvimento do novo website da organização Mulheres de Produto.
 
 # Site em construção
 
@@ -10,15 +10,21 @@ Este repositório destina-se ao desenvolvimento do novo website da organização
 
 Acompanhe o novo site [aqui](https://website-mulheres-de-produto.vercel.app/)
 
-## Sponsorship
+## Development
 
-Este website está sendo construído em parceria com a Vercel:
+- Instalar `yarn` de [yarnpkg.org](https://yarnpkg.org)
+- Dev: `yarn dev` e abrir `localhost:3000`
+- Build estático: `yarn build` depois `yarn export` para `/out`
 
-<a
-  href="https://vercel.com/?utm_source=[mulheres-de-produto]&utm_campaign=oss"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Powered by{" "}
- <img src="https://raw.githubusercontent.com/mulheres-de-produto/website/9037112aef314053d7ef769aefbc9226571b0a90/public/vercel.svg" alt="vercel-sponsor"/>
+## ▲ Deployment
+
+Cada novo push para a branch principal **main** é deployed automaticamente na Nuvem pela **[Vercel](https://vercel.com)**.
+
+<a target="_blank" href="https://vercel.com/?utm_source=[mulheres-de-produto]&utm_campaign=oss">
+  <img
+    alt="Powered by Vercel"
+    style="margin-top: 8px"
+    height="32"
+    src="https://website-mulheres-de-produto.vercel.app/powered-by-vercel.svg"
+  />
 </a>
