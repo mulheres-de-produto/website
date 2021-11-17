@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <Head>
         <title>Mulheres de Produto</title>
         <link rel="icon" href="/favicon.ico" />
@@ -29,7 +29,7 @@ export default function Home() {
         </p>
       </main>
       <section className="py-14">
-        <div className="max-w-full px-6 mx-auto mt-28 ml-16">
+        <div className="md:max-w-full md:px-6 md:mx-auto md:mt-28 md:ml-16 m-14 mt-20">
           <div className="flex flex-col justify-end text-left max-w-2xl h-full w-auto">
             <h6 className="text-sm text-left mb-4 font-normal">
               Seja bem-vinda à nossa comunidade Mulheres de Produto
@@ -53,6 +53,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <Footer />
     </div>
   );
