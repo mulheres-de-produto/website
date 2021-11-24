@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Navbar({ children }) {
   return (
     <>
-      <nav class="bg-black shadow-lg">
-        <div class="mx-auto px-4">
-          <div class="flex justify-between">
+      <nav className="bg-black shadow-lg">
+        <div className="mx-auto px-4">
+          <div className="flex justify-between">
             <Link href="/">
               <a className="flex justify-start items-center p-0 px-6">
                 <svg
@@ -98,7 +98,7 @@ export default function Navbar({ children }) {
               </a>
             </Link>
 
-            <div class="hidden md:flex md:flex-row md:ml-auto items-center">
+            <div className="hidden md:flex md:flex-row md:ml-auto items-center">
               <Link href="/">
                 <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white items-center justify-center hover:opacity-80 ">
                   INÍCIO
@@ -115,10 +115,10 @@ export default function Navbar({ children }) {
                 </a>
               </Link>
             </div>
-            <div class="md:hidden flex items-center">
-              <button class="outline-none mobile-menu-button">
+            <div className="md:hidden flex items-center">
+              <button className="outline-none mobile-menu-button">
                 <svg
-                  class="w-6 h-6 text-gray-500"
+                  className="w-6 h-6 text-gray-500"
                   x-show="!showMenu"
                   fill="none"
                   stroke-linecap="round"
@@ -134,12 +134,12 @@ export default function Navbar({ children }) {
           </div>
         </div>
 
-        <div class="hidden mobile-menu">
-          <ul class="">
-            <li class="active">
+        <div className="hidden mobile-menu">
+          <ul className="">
+            <li className="active">
               <a
                 href="/"
-                class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+                className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
               >
                 INÍCIO
               </a>
@@ -147,7 +147,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="/vagas"
-                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
               >
                 VAGAS
               </a>
@@ -155,7 +155,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="/quem-somos"
-                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
               >
                 QUEM SOMOS
               </a>
@@ -163,7 +163,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="#contact"
-                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
               >
                 Contact Us
               </a>
