@@ -1,8 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { createClient } from "contentful";
-import Image from "next/image";
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -28,7 +27,7 @@ export default function Vagas({ vagas }) {
 
       <main className="flex items-center justify-center text-center h-screen">
         {vagas.map((vaga) => (
-          <Link href={vaga.fields.linkParaCadastro}>
+          <Link href={"/vagas/" + vaga.fields.slug}>
             <a>
               <div className="max-w-sm rounded overflow-hidden shadow-lg m-10">
                 <img
