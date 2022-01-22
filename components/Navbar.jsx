@@ -1,13 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link'
 
-export default function Navbar({ children }) {
+export default function Navbar({children}) {
   return (
     <>
-      <nav className="bg-black shadow-lg">
-        <div className="mx-auto px-4">
+      <nav className="w-full bg-black shadow-lg">
+        <div className="px-4 mx-auto">
           <div className="flex justify-between">
             <Link href="/">
-              <a className="flex justify-start items-center p-0 px-6">
+              <a className="flex items-center justify-start p-0 px-6">
                 <svg
                   width="120"
                   height="88"
@@ -98,24 +98,24 @@ export default function Navbar({ children }) {
               </a>
             </Link>
 
-            <div className="hidden md:flex md:flex-row md:ml-auto items-center">
+            <div className="items-center hidden md:flex md:flex-row md:ml-auto">
               <Link href="/">
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white items-center justify-center hover:opacity-80 ">
+                <a className="items-center justify-center w-full px-3 py-2 text-white lg:inline-flex lg:w-auto hover:opacity-80 ">
                   INÍCIO
                 </a>
               </Link>
               <Link href="/vagas">
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white items-center justify-center hover:opacity-80">
+                <a className="items-center justify-center w-full px-3 py-2 text-white lg:inline-flex lg:w-auto hover:opacity-80">
                   VAGAS
                 </a>
               </Link>
               <Link href="/quem-somos">
-                <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 text-white items-center justify-center  hover:opacity-80">
+                <a className="items-center justify-center w-full px-3 py-2 text-white lg:inline-flex lg:w-auto hover:opacity-80">
                   QUEM SOMOS
                 </a>
               </Link>
             </div>
-            <div className="md:hidden flex items-center">
+            <div className="flex items-center md:hidden">
               <button className="outline-none mobile-menu-button">
                 <svg
                   className="w-6 h-6 text-gray-500"
@@ -139,7 +139,7 @@ export default function Navbar({ children }) {
             <li className="active">
               <a
                 href="/"
-                className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+                className="block px-2 py-4 text-sm font-semibold text-white bg-green-500"
               >
                 INÍCIO
               </a>
@@ -147,7 +147,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="/vagas"
-                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
               >
                 VAGAS
               </a>
@@ -155,7 +155,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="/quem-somos"
-                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
               >
                 QUEM SOMOS
               </a>
@@ -163,7 +163,7 @@ export default function Navbar({ children }) {
             <li>
               <a
                 href="#contact"
-                className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                className="block px-2 py-4 text-sm transition duration-300 hover:bg-green-500"
               >
                 Contact Us
               </a>
@@ -172,5 +172,5 @@ export default function Navbar({ children }) {
         </div>
       </nav>
     </>
-  );
+  )
 }
