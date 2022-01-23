@@ -3,8 +3,8 @@ import Link from 'next/link'
 export default function Navbar({children}) {
   return (
     <>
-      <nav className="w-full bg-black shadow-lg">
-        <div className="px-4 mx-auto">
+      <nav className="sticky top-0 z-20 w-full px-6 bg-black shadow-lg">
+        <div className="px-4">
           <div className="flex justify-between">
             <Link href="/">
               <a className="flex items-center justify-start p-0 px-6">
@@ -15,7 +15,7 @@ export default function Navbar({children}) {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_6:52)">
+                  <g clipPath="url(#clip0_6:52)">
                     <path
                       d="M450.52 81.78C454.173 84.84 456 89.9933 456 97.24V139.91C456 141.97 454.11 143 450.33 143H448.66C444.887 143 443 141.97 443 139.91V98.73C443 95.35 442.117 92.73 440.35 90.87C438.59 89.02 435.98 88.09 432.54 88.09C429.649 88.0415 426.827 88.9797 424.54 90.75C422.42 92.3361 420.552 94.2343 419 96.38V139.91C419 141.97 417.113 143 413.34 143H411.66C407.887 143 406 141.97 406 139.91V98.73C406 95.35 405.117 92.73 403.35 90.87C401.59 89.02 398.94 88.09 395.42 88.09C393.177 88.0759 390.97 88.6518 389.02 89.76C387.254 90.7174 385.637 91.9268 384.22 93.35C383.344 94.1595 382.596 95.0968 382 96.13V139.91C382 141.97 380.113 143 376.34 143H375.67C371.89 143 370 141.97 370 139.91V97.74C370.102 93.766 369.854 89.7907 369.26 85.86C368.77 83.39 368.52 81.99 368.52 81.66C368.52 80.51 369.52 79.66 371.6 79.19C373.454 78.7182 375.357 78.4698 377.27 78.45C377.861 78.4359 378.442 78.6065 378.931 78.9381C379.42 79.2698 379.794 79.7458 380 80.3C380.56 81.5082 380.993 82.7718 381.29 84.07C381.58 85.35 381.77 86.2 381.85 86.61C384.083 83.8827 386.824 81.6142 389.92 79.93C393.095 78.1347 396.683 77.1972 400.33 77.21C403.95 77.1552 407.533 77.939 410.8 79.5C413.983 81.0919 416.417 83.8665 417.58 87.23C420.012 84.3003 422.982 81.8632 426.33 80.05C429.587 78.2117 433.26 77.2342 437 77.21C441.91 77.0531 446.712 78.6761 450.52 81.78Z"
                       fill="#F6F6FA"
@@ -114,6 +114,11 @@ export default function Navbar({children}) {
                   QUEM SOMOS
                 </a>
               </Link>
+              <Link href="/parcerias">
+                <a className="items-center justify-center w-full px-3 py-2 text-white lg:inline-flex lg:w-auto hover:opacity-80">
+                  PARCERIAS
+                </a>
+              </Link>
             </div>
             <div className="flex items-center md:hidden">
               <button className="outline-none mobile-menu-button">
@@ -121,9 +126,9 @@ export default function Navbar({children}) {
                   className="w-6 h-6 text-gray-500"
                   x-show="!showMenu"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >

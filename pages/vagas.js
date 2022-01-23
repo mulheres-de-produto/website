@@ -27,7 +27,7 @@ export default function Vagas({vagas}) {
 
       <main className="flex items-center justify-center h-screen text-center">
         {vagas.map(vaga => (
-          <Link href={'/vagas/' + vaga.fields.slug}>
+          <Link key={vaga.fields.title} href={'/vagas/' + vaga.fields.slug}>
             <a>
               <div className="max-w-sm m-10 overflow-hidden rounded shadow-lg">
                 <img
