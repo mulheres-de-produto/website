@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         source: '/:path*',
-        destination: `https://mulheresdeproduto.com/:path*`,
+        destination: `https://mulheresdeproduto.godaddysites.com/:path*`,
       },
     ]
   },
