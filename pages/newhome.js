@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import {Navbar} from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center h-screen text-center bg-scroll bg-no-repeat bg-cover bg-hero-pattern md:bg-fixed">
+      <main className="flex flex-col items-center justify-center h-screen text-center bg-scroll bg-no-repeat bg-cover bg-hero-pattern-home md:bg-fixed">
         <div className="m-2 mr-0 text-6xl font-semibold leading-normal text-white break-words whitespace-pre-line font-sora">
           MULHERES DE <br />
           PRODUTO

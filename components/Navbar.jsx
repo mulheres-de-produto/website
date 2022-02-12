@@ -1,9 +1,33 @@
+import {useState, useEffect} from 'react'
 import Link from 'next/link'
+import cx from 'clsx'
 
-export default function Navbar({children}) {
+export const Navbar = () => {
+  const [navBgOpacity, setNavBgOpacity] = useState('')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 100
+      if (show) {
+        setNavBgOpacity('opacity-70')
+      } else {
+        setNavBgOpacity('opacity-100')
+      }
+    }
+    document.addEventListener('scroll', handleScroll)
+    return () => {
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <>
-      <nav className="sticky top-0 z-20 w-full px-6 bg-black shadow-lg">
+      <nav
+        className={cx(
+          'sticky top-0 z-20 w-full px-6 bg-black shadow-lg',
+          navBgOpacity,
+        )}
+      >
         <div className="px-4">
           <div className="flex justify-between">
             <Link href="/">
