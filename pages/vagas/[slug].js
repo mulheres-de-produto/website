@@ -1,6 +1,6 @@
 import React from 'react'
 import {createClient} from 'contentful'
-import Navbar from '../../components/Navbar'
+import {Navbar} from '../../components/Navbar'
 import Image from 'next/image'
 import Footer from '../../components/Footer'
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer'
