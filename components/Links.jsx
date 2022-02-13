@@ -2,9 +2,8 @@ import React from 'react'
 
 export default function Links() {
   return (
-    <section className="flex space-x-40 text-white justify-items-start">
-      <div className="flex flex-col space-y-4 justify-items-start">
-        <span className="text-lg">Comunidade</span>
+    <section className="flex flex-col justify-center order-1 my-10 text-center text-white sm:order-2 sm:mt-0 sm:space-x-40 sm:justify-items-start sm:flex-row">
+      <div className="flex flex-col justify-items-start">
         <a href="/parcerias" className="hover:underline">
           <span className="text-base">Parcerias</span>
         </a>
@@ -30,8 +29,7 @@ export default function Links() {
           <span className="text-base">Newsletter</span>
         </a>
       </div>
-      <div className="flex flex-col space-y-4 justify-items-start">
-        <span className="text-lg">Organização</span>
+      <div className="flex flex-col justify-items-start">
         <a
           href="https://mulheresdeproduto.com/políticas-de-privacidade"
           className="hover:underline"
