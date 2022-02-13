@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import {Navbar} from '../components/Navbar'
 import Footer from '../components/Footer'
-import {BookComponent} from '../components/Book/BookComponent'
+import {BookHero} from '../components/Book/BookHero'
+import {Writers} from '../components/Book/Writers'
 
 export const BookPage = () => {
   return (
@@ -18,7 +19,8 @@ export const BookPage = () => {
         />
       </Head>
       <Navbar />
-      <BookComponent />
+      <BookHero />
+      <Writers />
       <Footer />
     </>
   )
