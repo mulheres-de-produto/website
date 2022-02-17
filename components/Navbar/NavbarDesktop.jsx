@@ -1,8 +1,7 @@
 import Link from 'next/link'
-import MdpIconLink from './MdpIconLink';
-import data from './MenuListOptions';
+import MdpIconLink from '../MdpIconLink/MdpIconLink';
 
-function NavBarItems() {
+function NavBarItems({data}) {
   return (
     <div className="items-center flex flex-row ml-auto">
       {data.map (({href, text}) => (
@@ -16,12 +15,12 @@ function NavBarItems() {
   )
 }
 
-export default function NavbarDesktop() {
+export default function NavbarDesktop({data}) {
   return (
     <div className="navbar-desktop px-4 mobile:hidden laptop:block" >
       <div className="navbar-desktop flex justify-between">
         <MdpIconLink/>
-        <NavBarItems/>
+        <NavBarItems data={data}/>
       </div>
     </div>
   )

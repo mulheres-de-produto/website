@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
-import data from './MenuListOptions';
-import MdpIconLink from './MdpIconLink';
+import MdpIconLink from '../MdpIconLink/MdpIconLink';
 
 function MobileMenuButton({onClick}) {
 
@@ -25,8 +24,8 @@ function MobileMenuButton({onClick}) {
     )
 };
   
-function NavBarItems({isOpen}) {
-    const className = isOpen ? 'h-full delay-150 duration-300 ease-in-out' : 'h-0';
+function NavBarItems({isOpen, data}) {
+    const className = isOpen ? '' : 'hidden';
     return (
         <div className={className}>
         <ul>
@@ -48,7 +47,7 @@ function onClick(isOpen, fn) {
     fn(!isOpen)
 };
 
-export default function NavbarMobile() {
+export default function NavbarMobile({data}) {
     const [isOpen, toggleMenu] = useState(false);
     console.log('NavbarMobile', isOpen);
 
@@ -58,7 +57,7 @@ export default function NavbarMobile() {
                 <MdpIconLink/>
                 <MobileMenuButton onClick={()=>onClick(isOpen, toggleMenu)}/>
             </div>
-            <NavBarItems isOpen={isOpen}/>
+            <NavBarItems isOpen={isOpen} data={data}/>
         </div>
     )
 }
