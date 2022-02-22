@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/image.png')",
+        'hero-pattern': "url('/simple-hero.png')",
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
