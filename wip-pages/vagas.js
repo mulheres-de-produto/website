@@ -1,33 +1,33 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import {createClient} from 'contentful'
-import Link from 'next/link'
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import { createClient } from "contentful";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  })
+  });
 
   const res = await client.getEntries({
-    content_type: 'vagas',
-  })
+    content_type: "vagas",
+  });
 
   return {
     props: {
       vagas: res.items,
     },
-  }
+  };
 }
 
-export default function Vagas({vagas}) {
+export default function Vagas({ vagas }) {
   return (
     <>
       <Navbar />
 
       <main className="flex items-center justify-center h-screen text-center">
-        {vagas.map(vaga => (
-          <Link key={vaga.fields.title} href={'/vagas/' + vaga.fields.slug}>
+        {vagas.map((vaga) => (
+          <Link key={vaga.fields.title} href={"/vagas/" + vaga.fields.slug}>
             <a>
               <div className="max-w-sm m-10 overflow-hidden rounded shadow-lg">
                 <img
@@ -55,5 +55,5 @@ export default function Vagas({vagas}) {
       </main>
       <Footer />
     </>
-  )
+  );
 }

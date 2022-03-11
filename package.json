@@ -24,6 +24,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^38.0.1",
     "postcss": "^8.3.11",
+    "prettier": "2.5.1",
     "react-icons": "^4.3.1",
     "tailwindcss": "^2.2.19"
   }

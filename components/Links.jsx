@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Links() {
   return (
@@ -59,5 +59,5 @@ export default function Links() {
         </a>
       </div>
     </section>
-  )
+  );
 }

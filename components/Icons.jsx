@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import {
   FaLinkedin,
   FaTwitter,
   FaInstagram,
   FaYoutube,
   FaMediumM,
-} from 'react-icons/fa'
+} from "react-icons/fa";
 
 export default function Icons() {
   return (
@@ -32,5 +32,5 @@ export default function Icons() {
         <FaYoutube size={25} />
       </a>
     </div>
-  )
+  );
 }

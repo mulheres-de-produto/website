@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-export default function Navbar({children}) {
+export default function Navbar({ children }) {
   return (
     <>
       <nav className="sticky top-0 z-20 w-full px-6 bg-black shadow-lg">
@@ -177,5 +177,5 @@ export default function Navbar({children}) {
         </div>
       </nav>
     </>
-  )
+  );
 }
