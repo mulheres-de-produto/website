@@ -11,7 +11,7 @@ const client = createClient({
 });
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({
+  const res = await client.getEntries({
     content_type: "vagas",
   });
 
@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProperties = async ({ params }) => {
+export const getStaticProps = async ({ params }) => {
   const { items } = await client.getEntries({
     content_type: "vagas",
     "fields.slug": params.slug,
