@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar/Navbar'
+import Head from "next/head";
+import Image from "next/image";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
   return (
@@ -10,7 +10,11 @@ export default function Home() {
         <title>Mulheres de Produto</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Sora:wght@100;500;600&display=swap"
           rel="stylesheet"
@@ -55,5 +59,5 @@ export default function Home() {
       </section>
       <Footer />
     </div>
-  )
+  );
 }

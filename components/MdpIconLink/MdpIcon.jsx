@@ -87,5 +87,5 @@ export default function MdpIcon() {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Logo from '../public/brand-logo.svg'
-import Icons from '../components/Icons'
-import Links from './Links'
-import VercelLogo from '../public/powered-by-vercel-2.svg'
+import Link from "next/link";
+import Logo from "../public/brand-logo.svg";
+import Icons from "../components/Icons";
+import Links from "./Links";
+import VercelLogo from "../public/powered-by-vercel-2.svg";
 
 export default function Footer() {
   return (
@@ -29,5 +29,5 @@ export default function Footer() {
         </a>
       </div>
     </footer>
-  )
+  );
 }
